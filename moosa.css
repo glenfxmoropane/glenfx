@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 10px;
+    color: #3c0d4a;
+}
+
+h1, h2, h3 {
+    margin: 30px 0;
+    color: #3c0d4a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #3f3a8c;
+    padding: 10px;
+    position: fixed; /* Fixed positioning for the navigation bar */
+    top: 0;
+    left: 0;
+    height: 100%; /* Ensure the navigation bar spans the full height */
+    width: 200px; /* Set the width of the navigation bar */
+    text-align: left; /* Align text to the left */
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px; /* Add space from the top */
+}
+
+nav ul li {
+    margin-bottom: 30px; /* Separate the navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block; /* Make each item take full width for easy clicking */
+    padding: 10px;
+}
+
+/* Home Section */
+#home {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    left: 10;
+    position: relative; /* Added for positioning the image */
+    margin-left: 100px; /* Push content to the right to avoid overlap with nav */
+}
+
+#home img {
+    position: absolute; /* Positioned relative to the #home section */
+    top: 0; /* Aligns it to the top */
+    right: 5px; /* Aligns it to the right */
+    max-width: 10%; /* Adjust size as needed */
+    margin-top: 10px; /* Small space from the top */
+}
+
+button {
+    background-color: #3f3a8c;
+    color: white;
+    padding: 10px 20px;
+    border: 4;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Product Section */
+#products {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-left: 200px; /* Push content to the right to avoid overlap with nav */
+}
+
+.product {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 45%;
+    max-width: 80px;
+    height: auto;
+}
+
+.product button {
+    background-color: #3f3a8c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background-color: #3f3a8c;
+}
+
+/* Pricing Section */
+#pricing {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-left: 220px; /* Push content to the right to avoid overlap with nav */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #3f3a8c;
+    color: white;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-left: 220px; /* Push content to the right to avoid overlap with nav */
+}
+
+a {
+    color: #130c6f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: static; /* Navigation will be static on small screens */
+    }
+
+    #home, #products, #pricing, #contact {
+        margin-left: 0; /* Remove left margin on smaller screens */
+    }
+
+    .product {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
